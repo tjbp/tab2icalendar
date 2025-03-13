@@ -1,14 +1,14 @@
 {
 	"$schema": "https://json.schemastore.org/chrome-manifest",
-	"name": "Awesome Extension",
-	"version": "0.0.0",
-	"description": "An awesome new browser extension",
-	"homepage_url": "https://github.com/fregante/browser-extension-template",
+	"name": "Tab 2 iCalendar",
+	"version": "1.0.0",
+	"description": "Convert tabs to iCalendar tasks",
+	"homepage_url": "https://github.com/tjbp/tab2icalendar",
 	"manifest_version": 3,
 	"minimum_chrome_version": "121",
 	"browser_specific_settings": {
 		"gecko": {
-			"id": "awesome-extension@notlmn.github.io",
+			"id": "tab2icalendar@tjbp.github.io",
 			"strict_min_version": "109.0"
 		}
 	},
@@ -16,25 +16,15 @@
 		"128": "icon.png"
 	},
 	"permissions": [
-		"storage"
+		"tabs"
 	],
-	"host_permissions": [
-		"https://github.com/*"
-	],
-	"content_scripts": [
-		{
-			"matches": [ "https://github.com/fregante/browser-extension-template/*" ],
-			"js": [ "content.js" ],
-			"css": [ "content.css" ],
-			"run_at": "document_end"
-		}
-	],
-	"options_ui": {
-		"page": "options.html"
-	},
-	"background": {
-		"service_worker": "background.js",
-		"type": "module",
-		"scripts": [ "background.js" ]
-	}
+	"action": {
+    "default_icon": {
+      "16": "icon.png",
+      "24": "icon.png",
+      "32": "icon.png"
+    },
+    "default_title": "Convert selected tabs to ICS",
+    "default_popup": "action_popup.html"
+  }
 }

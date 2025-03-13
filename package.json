@@ -29,6 +29,9 @@
 		"rules": {}
 	},
 	"dependencies": {
+		"@types/chrome": "^0.0.309",
+		"file-saver": "^2.0.5",
+		"ical-generator": "^8.1.1",
 		"webext-base-css": "^2.0.1",
 		"webext-options-sync": "^4.2.3"
 	},

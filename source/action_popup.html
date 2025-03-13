@@ -1,0 +1,19 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Create .ics</title>
+
+<form id="form">
+	<div>Creating task from <span id="tabs-count"></span> tabs:</div>
+  <div id="tabs-list"></div>
+  <label class="text-input">
+    <span>Summary of task (leave blank to use tab titles)</span>
+    <input type="text" name="summary">
+  </label>
+  <label class="checkbox-input">
+    <input type="checkbox" name="individual">
+    Create separate tasks for each tab
+  </label>
+  <button id="create">Create</button>
+</form>
+
+<script src="action_popup.ts" type="module"></script>
