@@ -21,7 +21,7 @@ chrome.tabs.query({highlighted: true}).then(tabs => {
 	const tabsCountElement = document.querySelector('#tabs-count');
 
 	if (tabsCountElement) {
-		tabsCountElement.innerHTML = String(tabs.length);
+		tabsCountElement.textContent = String(tabs.length);
 	}
 
 	const formElement = document.querySelector('form');
