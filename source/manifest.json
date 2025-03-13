@@ -25,6 +25,6 @@
       "32": "icon.png"
     },
     "default_title": "Convert selected tabs to ICS",
-    "default_popup": "action_popup.html"
+    "default_popup": "action-popup.html"
   }
 }

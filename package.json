@@ -19,7 +19,9 @@
 			"webextensions"
 		],
 		"rules": {
-			"unicorn/prefer-top-level-await": "off"
+			"unicorn/prefer-top-level-await": "off",
+			"@typescript-eslint/no-unsafe-assignment": "off",
+			"@typescript-eslint/no-unsafe-call": "off"
 		}
 	},
 	"stylelint": {
@@ -43,7 +45,7 @@
 		"stylelint": "^16.6.1",
 		"stylelint-config-prettier": "^9.0.5",
 		"stylelint-config-xo": "^1.0.2",
-		"xo": "^0.59.3"
+		"xo": "^0.60.0"
 	},
 	"@parcel/resolver-default": {
 		"packageExports": true
